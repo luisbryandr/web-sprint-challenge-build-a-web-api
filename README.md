@@ -31,13 +31,13 @@ Your finished project must include all of the following requirements:
 A _"test"_ script already exists you can use to run tests against your code.
 A _"resetdb"_ script exists that allows you to reset the database to its original state.
 
-- [ ] Write an _npm script_ named _"start"_ that uses `node` to run the API server.
-- [ ] Write an _npm script_ named _"server"_ that uses `nodemon` to run the API server.
-- [ ] Install _nodemon_ as a development dependency that would not be used in production.
+- [X] Write an _npm script_ named _"start"_ that uses `node` to run the API server.
+- [X] Write an _npm script_ named _"server"_ that uses `nodemon` to run the API server.
+- [X] Install _nodemon_ as a development dependency that would not be used in production.
 
 #### Environment Variables
 
-- [ ] Bring the port number from the `process.env` variable, falling back to `9000` if `process.env.PORT` is undefined **!!!**
+- [X] Bring the port number from the `process.env` variable, falling back to `9000` if `process.env.PORT` is undefined **!!!**
 
 #### Endpoints
 
@@ -146,8 +146,22 @@ We have provided test data for all the resources.
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. The core features of Node.js and Express and why they are useful.
+1.1. The core features of Node.js and Express and why they are useful.
+    I see the core features being the ability to run an API, server with minimal effort. It doesn't take much code to get a basic server up and running.  Anytime something is simple and quick it is very useful to developers.  Another core feature, besides its simplicity is the ability to make it as complex as we need it to be by extended functionalilty as we seem fit by the use of middleware or npm packages.
+
 1. Understand and explain the use of Middleware.
+
+  Middleware is simply code that adds the functionality that you need to the basic simple framework that is express or  the basic simple server you may be building with something else.  I think of middleware as helper functions that allow you to do what you need or desire as you see fit as the developer.
+
 1. The basic principles of the REST architectural style.
+
+    transfers a representation of the state of the resource to the requester or endpoint. 
+    Uniform code that is lightweight, fast and allows for easy scalability.
+
 1. Understand and explain the use of Express Routers.
+     Routers are middleware functions that allow you to direct traffic of your api to different endpoints and thus have modularity with your server code. For example one route to a specific endpoint or allows you to access a particular resource a specific way you design. And you can have multiple of these, one for every resource you want to create or have.
+
 1. Describe tooling used to manually test the correctness of an API.
+
+  tooling like postman or Httpie are very good tools that let you test your api as you are developing to make sure it behaves the way you intend it to. They are pieces of software that run requests for you as if they were a client or user. While allowing the developer greater insight via verbose, or simple elegant responses that the user or client may not see when they interact with your api or server.
+  
